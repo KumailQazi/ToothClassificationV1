@@ -27,7 +27,7 @@ def toothClassification():
                                         ##
                                         tf.keras.layers.Dense(512,activation="relu"),
                                         ##
-                                        tf.keras.layers.Dense(1,activation="sigmoid")
+                                        tf.keras.layers.Dense(1,activation="softmax")
                                     ])
 
     model.compile(loss="binary_crossentropy",
